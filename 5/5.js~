@@ -1,0 +1,8 @@
+var fs = require('fs');
+var fileName = process.argv[2];
+function listDir(){
+    fs.readdir(fileName, function(error, content){
+	console.log(content);
+    });
+}
+listDir();
